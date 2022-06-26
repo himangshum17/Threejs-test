@@ -11,7 +11,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // Cube Geometry
-const geometry = new THREE.BoxGeometry(1, 1, 1);
+const geometry = new THREE.BoxGeometry(2, 2, 2);
 // color for the cube Geometry
 // const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 const texture = new THREE.TextureLoader().load('./assets/texture/box.jpg');
@@ -27,6 +27,7 @@ function animate() {
   requestAnimationFrame(animate);
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;
+  cube.rotation.z += 0.01;
   renderer.render(scene, camera);
 }
 
