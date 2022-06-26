@@ -29,7 +29,6 @@ const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight);
 
 camera.position.z = 5;
-controls.update();
 
 // Animate the Scene
 function animate() {
